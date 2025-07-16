@@ -42,7 +42,7 @@ Hi, I am **Tanay Ranjan**, a graduated student from **BITS Pilani, Hyderabad Cam
 
 I am very eager to work on projects related to implementations of **Controls and Learning Algorithms** in Robotics.
 
-Currently I am working as a **Project Intern** at [AI & Robotics Lab](https://www.linkedin.com/company/artificial-intelligence-and-robotics-laboratory) under [Prof. Suresh Sundaram](https://aero.iisc.ac.in/people/suresh-sundaram/) at **IISc Bangalore**, where I am working on building drone swarm system leveraging 5G communication technology, and obstacle avoidance on drone using Control Barrier Function.
+Currently I am working as a **Project Associate** at [AI & Robotics Lab](https://www.linkedin.com/company/artificial-intelligence-and-robotics-laboratory) under [Prof. Suresh Sundaram](https://aero.iisc.ac.in/people/suresh-sundaram/) at **IISc Bangalore**, where I am working on building drone swarm system leveraging 5G communication technology, and obstacle avoidance on drone using Control Barrier Function.
 
 Previously I have worked as an **Undergraduate Research Intern** in [Robotics Research Center @ IIIT-Hyderabad](https://robotics.iiit.ac.in/), under supervision of [Prof. Nagamanikandan Govindan](https://nagamanigi.wixsite.com/home) on topic **Motion Control of Mobile Manipulator**
 
