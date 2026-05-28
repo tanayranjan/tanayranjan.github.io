@@ -48,7 +48,7 @@ I also have worked as an **Undergraduate Research Intern** in [Robotics Research
 
 I am looking for opportunities in the field of Robotics, so if you have any for me, please drop me a mail at my Institute E-Mail
 
-**CV** : [Google Drive Link](https://drive.google.com/file/d/1KmMiYzd71ryAC_atJM7kYabfSnnNxKLY/view?usp=drive_link)
+**CV** : [Google Drive Link](https://drive.google.com/file/d/1UJJ5m3KGU4PX9G-vpOGZnCQwKxjYCkvO/view?usp=drive_link)
 
 **My Personal E-Mail** : tanayranjan93@gmail.com ([Click to Mail](mailto:tanayranjan93@gmail.com))\
 **My Institute E-Mail** : tanay.ranjan@rwth-aachen.de ([Click to Mail](mailto:tanay.ranjan@rwth-aachen.de))
