@@ -38,17 +38,17 @@ img: ":about.jpg"
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-Hi, I am **Tanay Ranjan**, a graduated student from **BITS Pilani, Hyderabad Campus**, with the degree **B.E. in Electrical and Electronics Engineering**.
+Hi, I am **Tanay Ranjan**, a graduated student from **BITS Pilani, Hyderabad Campus**, with the degree **B.E. in Electrical and Electronics Engineering** and currently pursuing **M.Sc. in Robotic Systems Engineering** at **RWTH Aachen**.
 
 I am very eager to work on projects related to implementations of **Controls and Learning Algorithms** in Robotics.
 
-Currently I am working as a **Project Associate** at [AI & Robotics Lab](https://www.linkedin.com/company/artificial-intelligence-and-robotics-laboratory) under [Prof. Suresh Sundaram](https://aero.iisc.ac.in/people/suresh-sundaram/) at **IISc Bangalore**, where I am working on building drone swarm system leveraging 5G communication technology, and obstacle avoidance on drone using Control Barrier Function.
+Previously I have worked as a **Project Associate I** at [AI & Robotics Lab](https://www.linkedin.com/company/artificial-intelligence-and-robotics-laboratory) under [Prof. Suresh Sundaram](https://aero.iisc.ac.in/people/suresh-sundaram/) at **IISc Bangalore**, where I have worked mainly on designing obstacle avoidance solution on a radar-equipped UAV.
 
-Previously I have worked as an **Undergraduate Research Intern** in [Robotics Research Center @ IIIT-Hyderabad](https://robotics.iiit.ac.in/), under supervision of [Prof. Nagamanikandan Govindan](https://nagamanigi.wixsite.com/home) on topic **Motion Control of Mobile Manipulator**
+I also have worked as an **Undergraduate Research Intern** in [Robotics Research Center @ IIIT-Hyderabad](https://robotics.iiit.ac.in/), under supervision of [Prof. Nagamanikandan Govindan](https://nagamanigi.wixsite.com/home). This research served as my Bachelor's thesis, focusing on the topic **Motion Control of Mobile Manipulator**
 
-I am looking for opportunities in the field of Robotics, so if you have any for me, please drop me a mail at my Personal E-Mail
+I am looking for opportunities in the field of Robotics, so if you have any for me, please drop me a mail at my Institute E-Mail
 
 **CV** : [Google Drive Link](https://drive.google.com/file/d/1KmMiYzd71ryAC_atJM7kYabfSnnNxKLY/view?usp=drive_link)
 
 **My Personal E-Mail** : tanayranjan93@gmail.com ([Click to Mail](mailto:tanayranjan93@gmail.com))\
-**My Institute E-Mail** : f20200483@hyderabad.bits-pilani.ac.in ([Click to Mail](mailto:f20200483@hyderabad.bits-pilani.ac.in))
+**My Institute E-Mail** : tanay.ranjan@rwth-aachen.de ([Click to Mail](mailto:tanay.ranjan@rwth-aachen.de))
