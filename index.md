@@ -40,7 +40,7 @@ img: ":home-heading.jpg"
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
 
-I am **Tanay Ranjan**, final year student at BITS Pilani, Hyderabad Campus.
+I am **Tanay Ranjan**, currently pursuing M.Sc. Robotic Systems Engineering at RWTH Aachen.
 
 This is my portfolio website where you can find details about me, my works and links to all of my social media profiles
 
