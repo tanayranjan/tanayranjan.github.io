@@ -1,0 +1,44 @@
+{%- assign entry = include.entry -%}
+{%- if entry.type == "education" -%}
+  {%- assign type_icon = "fa-graduation-cap" -%}
+  {%- assign type_label = "Education" -%}
+{%- else -%}
+  {%- assign type_icon = "fa-briefcase" -%}
+  {%- assign type_label = "Experience" -%}
+{%- endif -%}
+<article class="multipurpose-container journey-card journey-card--{{ entry.type }}">
+  <div class="journey-card-heading">
+    {%- if entry.logo or entry.icon %}
+      <div class="journey-identity" aria-hidden="true">
+        {%- if entry.logo %}
+          <img src="{{ entry.logo | relative_url }}" alt="">
+        {%- else %}
+          <i class="{{ entry.icon }}"></i>
+        {%- endif %}
+      </div>
+    {%- endif %}
+    <div>
+      <span class="journey-type-badge"><i class="fa {{ type_icon }}" aria-hidden="true"></i>{{ type_label }}</span>
+      <p class="journey-duration">
+        <time datetime="{{ entry.start_date }}">{{ entry.start_date | date: "%b %Y" }}</time>
+        <span aria-hidden="true">—</span>
+        {%- if entry.end_date == "Present" %}
+          <span>Present</span>
+        {%- else %}
+          <time datetime="{{ entry.end_date }}">{{ entry.end_date | date: "%b %Y" }}</time>
+        {%- endif %}
+      </p>
+      <h2>{{ entry.title }}</h2>
+      <p class="journey-organization">{{ entry.organization }}</p>
+    </div>
+  </div>
+  {%- if entry.location %}
+    <p class="journey-location"><i class="fa fa-map-marker" aria-hidden="true"></i><span>{{ entry.location }}</span></p>
+  {%- endif %}
+  <div class="journey-description markdown-style">{{ entry.description | markdownify }}</div>
+  {%- if entry.technologies and entry.technologies.size > 0 %}
+    <ul class="journey-skills" aria-label="Technologies and skills">
+      {%- for technology in entry.technologies %}<li>{{ technology }}</li>{%- endfor %}
+    </ul>
+  {%- endif %}
+</article>

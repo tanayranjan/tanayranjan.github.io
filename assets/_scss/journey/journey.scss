@@ -1,0 +1,46 @@
+/* Proportional Journey timeline. The desktop axis is month-accurate, not row-based. */
+.journey {
+  margin: 48px auto 0;
+  max-width: 1180px;
+}
+
+.layout-journey .main-container {
+  max-width: min(1180px, calc(100vw - var(--side-nav-width)));
+}
+
+.journey-intro { padding: clamp(25px, 5vw, 48px); }
+.journey-eyebrow, .journey-duration { color: var(--body-anchor-text-color); font-size: 1.25rem; font-weight: 700; letter-spacing: .08em; margin: 0 0 8px; text-transform: uppercase; }
+.journey-intro h1 { color: var(--body-header-text-color); font-size: clamp(3.4rem, 7vw, 5.2rem); font-weight: 700; margin: 0 0 16px; }
+.journey-intro-copy > :last-child, .journey-description > :last-child { margin-bottom: 0; }
+
+.journey-timeline--desktop { height: var(--journey-axis-height); margin-top: 35px; position: relative; }
+.journey-timeline--mobile { display: none; }
+.journey-axis { background: var(--body-hr-color); bottom: 0; left: 50%; position: absolute; top: 0; transform: translateX(-50%); width: 2px; }
+.journey-axis-tick { background: var(--body-background-color); color: var(--body-anchor-text-color); font-size: 1.1rem; font-weight: 700; left: 50%; letter-spacing: .04em; padding: 3px 6px; position: absolute; top: var(--axis-position); transform: translate(-50%, -50%); }
+
+.journey-duration-entry { height: var(--timeline-height); position: absolute; top: var(--timeline-top); width: calc(50% - 50px); }
+.journey-duration-entry--education { left: 0; }
+.journey-duration-entry--experience { left: calc(50% + 50px); }
+.journey-duration-rail { background: var(--body-anchor-text-color); border-radius: 999px; bottom: 0; opacity: .65; position: absolute; top: 0; width: 5px; }
+.journey-duration-rail::before, .journey-duration-rail::after { background: var(--body-anchor-text-color); border: 3px solid var(--body-background-color); border-radius: 50%; content: ""; height: 13px; position: absolute; width: 13px; }
+.journey-duration-rail::before { top: -4px; }.journey-duration-rail::after { bottom: -4px; }
+.journey-duration-entry--education .journey-duration-rail { right: -16px; }.journey-duration-entry--education .journey-duration-rail::before, .journey-duration-entry--education .journey-duration-rail::after { right: -4px; }
+.journey-duration-entry--experience .journey-duration-rail { left: -16px; }.journey-duration-entry--experience .journey-duration-rail::before, .journey-duration-entry--experience .journey-duration-rail::after { left: -4px; }
+.journey-card-anchor { position: relative; transform: translateY(var(--journey-card-shift, 0)); transition: transform 180ms ease; z-index: 1; }
+
+.journey-card { border: 1px solid var(--body-hr-color); padding: clamp(22px, 4vw, 32px); text-align: left; transition: transform 180ms ease, box-shadow 180ms ease; }
+.journey-card:hover { box-shadow: 0 10px 25px -15px var(--body-header-text-color); transform: translateY(-3px); }
+.journey-card-heading { align-items: flex-start; display: flex; gap: 16px; }.journey-card h2 { color: var(--body-header-text-color); font-size: 2.4rem; font-weight: 700; margin: 0 0 4px; }.journey-organization { font-size: 1.6rem; font-weight: 500; margin: 0; }
+.journey-identity { align-items: center; background: var(--body-background-color); border: 1px solid var(--body-hr-color); border-radius: 10px; color: var(--body-anchor-text-color); display: flex; flex: 0 0 46px; font-size: 2.2rem; height: 46px; justify-content: center; overflow: hidden; }.journey-identity img { height: 100%; max-width: 100%; object-fit: contain; width: 100%; }
+.journey-type-badge { align-items: center; background: var(--body-anchor-text-color); border-radius: 999px; color: #fff; display: inline-flex; font-size: 1.1rem; font-weight: 700; gap: 5px; letter-spacing: .04em; margin-bottom: 10px; padding: 4px 9px; text-transform: uppercase; }.journey-card--experience .journey-type-badge { background: var(--body-header-text-color); }
+.journey-duration-entry--education .journey-duration-rail,
+.journey-duration-entry--education .journey-duration-rail::before,
+.journey-duration-entry--education .journey-duration-rail::after,
+.journey-card--education .journey-type-badge { background: #0071ff; }
+.journey-duration-entry--experience .journey-duration-rail,
+.journey-duration-entry--experience .journey-duration-rail::before,
+.journey-duration-entry--experience .journey-duration-rail::after,
+.journey-card--experience .journey-type-badge { background: #8b1e1e; }
+.journey-location { color: var(--body-text-color); font-size: 1.35rem; margin: 16px 0; }.journey-location i { color: var(--body-anchor-text-color); margin-right: 7px; }.journey-skills { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 20px 0 0; padding: 0; }.journey-skills li { background: var(--body-background-color); border: 1px solid var(--body-hr-color); border-radius: 999px; color: var(--body-header-text-color); font-size: 1.2rem; font-weight: 500; padding: 5px 10px; }
+
+@media screen and (max-width: 700px) { .journey { margin-top: 25px; }.layout-journey .main-container { max-width: var(--main-container-max-width); }.journey-timeline--desktop { display: none; }.journey-timeline--mobile { border-left: 2px solid var(--body-hr-color); display: flex; flex-direction: column; gap: 20px; margin: 30px 0 0 18px; padding-left: 28px; }.journey-mobile-entry { position: relative; }.journey-mobile-entry::before { background: #c62828; border: 4px solid var(--body-background-color); border-radius: 50%; content: ""; height: 18px; left: -39px; position: absolute; top: 24px; width: 18px; }.journey-mobile-entry--experience::before { background: #8b1e1e; }.journey-card h2 { font-size: 2.1rem; } }

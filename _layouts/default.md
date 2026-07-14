@@ -33,7 +33,7 @@ layout: util/compress
     {% include slider_styles.html %}
   </head>
 
-  <body {{ default_dark }}>
+  <body {{ default_dark }} class="layout-{{ page.layout }}">
     {% if color_scheme_enabled -%}
       <script src="{{ site.baseurl }}/assets/js/color-scheme-attr-init.js" data-mode="{{ site.data.conf.main.color_scheme_default_dark }}"></script>
     {%- endif %}
