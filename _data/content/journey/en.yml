@@ -1,0 +1,74 @@
+# Optional logo images belong in /assets/images/logos/ (SVG, PNG, or JPG).
+# Entries may also include `icon` (Font Awesome 4 classes), `links`, `media`,
+# `certificates`, or `publications` as the journey grows.
+page_data:
+  main:
+    eyebrow: "A path shaped by curiosity"
+    header: "Journey"
+    # The proportional desktop axis runs from this month through axis_end_date.
+    axis_start_date: 2018-08-01
+    axis_end_date: Present
+    info: >-
+      A short map of the places and problems that shaped how I think about robotics,
+      control, and autonomous systems.
+
+  timeline:
+    - type: education
+      start_date: 2025-09-01
+      end_date: "Present"
+      title: "M.Sc. in Robotic Systems Engineering"
+      organization: "RWTH Aachen University"
+      icon: "fa fa-university"
+      location: "Aachen, Germany"
+      description: >-
+        Building on prior work in control, robotics, and systems engineering while
+        adapting to research in a new academic environment.
+      technologies: [Robotics, Control Systems, Perception, ROS]
+
+    - type: experience
+      start_date: 2024-08-01
+      end_date: 2025-10-01
+      title: "Project Associate"
+      organization: "AI and Robotics Lab @ IISc Bangalore"
+      icon: "fa fa-rocket"
+      location: "Bengaluru, India"
+      description: >-
+        Contributed to research on aerial robotics, safety-aware autonomy, and
+        system integration across sensing, control, and flight hardware.
+      technologies: [UAVs, 5G, Radar, Control Barrier Functions, ROS2, PX4]
+
+    - type: experience
+      start_date: 2023-07-01
+      end_date: 2024-01-01
+      title: "Research Intern"
+      organization: "Robotics Research Center @ IIIT Hyderabad"
+      icon: "fa fa-cogs"
+      location: "Hyderabad, India"
+      description: >-
+        Worked on manipulation-focused research and simulation workflows, with a
+        strong emphasis on control and experimentation.
+      technologies: [Mobile Manipulation, ROS, Gazebo, Python, Control]
+
+    - type: experience
+      start_date: 2023-05-01
+      end_date: 2023-07-01
+      title: "Project Trainee"
+      organization: "Division of Remote Handling & Robotics @ BARC"
+      icon: "fa fa-shield"
+      location: "Mumbai, India"
+      description: >-
+        Improved a vision-based safety monitoring workflow by turning detection output
+        into a more usable supervision tool for restricted areas.
+      technologies: [Computer Vision, Python, PyGame, MongoDB]
+
+    - type: education
+      start_date: 2020-08-01
+      end_date: 2024-05-01
+      title: "B.E. in Electrical and Electronics Engineering"
+      organization: "BITS Pilani, Hyderabad Campus"
+      icon: "fa fa-bolt"
+      location: "Hyderabad, India"
+      description: >-
+        Developed a strong foundation in electronics, control, and systems thinking that
+        later fed into robotics research and autonomous systems work.
+      technologies: [Electronics, Embedded Systems, Control, Programming]

@@ -40,8 +40,8 @@ img: ":home-heading.jpg"
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
 
-I am **Tanay Ranjan**, currently pursuing M.Sc. Robotic Systems Engineering at RWTH Aachen.
+Hi, I'm **Tanay Ranjan**.
 
-This is my portfolio website where you can find details about me, my works and links to all of my social media profiles
+I enjoy building intelligent robotic systems and exploring the intersection of control, perception, and autonomy. From research internships and engineering projects to my current master's studies at RWTH Aachen University, this website documents the journey that has shaped my interests and work.
 
-Visit my [about]({{ site.baseurl }}{% link tabs/about.md %}) and [project]({{ site.baseurl }}{% link tabs/blog/index.html %}) page for more details about me
+Feel free to explore the [About]({{ site.baseurl }}{% link tabs/about.md %}), [Journey]({{ site.baseurl }}{% link tabs/journey.md %}), and [Project]({{ site.baseurl }}{% link tabs/blog/index.html %}) pages to learn more about me, the experiences that have shaped my path, and the work I've been fortunate to contribute to. Thanks for stopping by!
