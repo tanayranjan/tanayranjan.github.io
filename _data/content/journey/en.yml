@@ -30,7 +30,7 @@ page_data:
       end_date: 2025-10-10
       title: "Project Associate"
       organization: "AI and Robotics Lab @ IISc Bangalore"
-      icon: "fa fa-rocket"
+      icon: "fa fa-flask"
       location: "Bengaluru, India"
       description: >-
         Contributed to research on aerial robotics, safety-aware autonomy, and
@@ -42,7 +42,7 @@ page_data:
       end_date: 2024-01-01
       title: "Research Intern"
       organization: "Robotics Research Center @ IIIT Hyderabad"
-      icon: "fa fa-cogs"
+      icon: "fa fa-flask"
       location: "Hyderabad, India"
       description: >-
         Worked on manipulation-focused research and simulation workflows, with a
@@ -54,7 +54,7 @@ page_data:
       end_date: 2023-07-18
       title: "Project Trainee"
       organization: "Division of Remote Handling & Robotics @ BARC"
-      icon: "fa fa-shield"
+      icon: "fa fa-atom"
       location: "Mumbai, India"
       description: >-
         Improved a vision-based safety monitoring workflow by turning detection output
@@ -66,7 +66,7 @@ page_data:
       end_date: 2024-08-05
       title: "B.E. in Electrical and Electronics Engineering"
       organization: "BITS Pilani, Hyderabad Campus"
-      icon: "fa fa-bolt"
+      icon: "fa fa-university"
       location: "Hyderabad, India"
       description: >-
         Developed a strong foundation in electronics, control, and systems thinking that
