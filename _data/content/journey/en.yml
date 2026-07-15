@@ -54,7 +54,7 @@ page_data:
       end_date: 2023-07-18
       title: "Project Trainee"
       organization: "Division of Remote Handling & Robotics @ BARC"
-      icon: "fa fa-atom"
+      icon: "fa fa-briefcase"
       location: "Mumbai, India"
       description: >-
         Improved a vision-based safety monitoring workflow by turning detection output
