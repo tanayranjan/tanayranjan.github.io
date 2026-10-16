@@ -9,6 +9,9 @@
   width: calc(100% - var(--side-nav-width));
   max-width: var(--main-container-max-width);
   left: var(--side-nav-width);
+  right: 0;            /* Add this */
+  margin-left: auto;   /* Add this */
+  margin-right: auto;  /* Add this */
 }
 
 /* fix spacing end of container */

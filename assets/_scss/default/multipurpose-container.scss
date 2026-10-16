@@ -11,6 +11,8 @@
 .main-container {
   min-height: calc(100vh - (var(--top-nav-height) + var(--footer-height)));
   max-width: var(--main-container-max-width);
+  margin-left: auto;   /* Add this */
+  margin-right: auto;  /* Add this */
   padding-left: var(--main-container-margin);
   padding-right: var(--main-container-margin);
   padding-top: var(--main-container-margin);
