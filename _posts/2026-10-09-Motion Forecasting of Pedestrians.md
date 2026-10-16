@@ -1,7 +1,7 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: id_forecasting
-title: "Motion Forecasting of Pedestrians"
+title: "Motion Forecasting of Traffic Participants"
 
 # post specific
 # if not specified, .name will be used from _data/owner/[language].yml
@@ -51,12 +51,12 @@ Our team tackled this complex problem by building a suite of models, transitioni
   <img src=":ACDC/ACDC_Architecture.drawio.svg" alt="Architecture Diagram">
 </p>
 
-Traffic participants operate under fundamentally different dynamics; unlike vehicles that follow structured lane geometry, pedestrians exhibit short-range, highly irregular movements and require a tighter, localized spatial context. To address this, I spearheaded the design and development of a pedestrian-specific Map-Aware Social-LSTM model.
+Traffic participants operate under fundamentally different dynamics; unlike vehicles that follow structured lane geometry, pedestrians exhibit short-range, highly irregular movements and require a tighter, localized spatial context. To address this, I spearheaded the design and development of a pedestrian-specific Map-Aware Social-LSTM model, building foundational architectural inspiration from hierarchical trajectory modeling <a href="https://ieeexplore.ieee.org/document/8354239" target="_blank" rel="noopener noreferrer">SS-LSTM</a> and social pooling frameworks <a href="https://ieeexplore.ieee.org/document/7780479" target="_blank" rel="noopener noreferrer">Social-LSTM</a>.
 
-- **Architectural Design**: The model utilizes a dual-branch design that explicitly decomposes social and scene information into dedicated encoders.
-- **Context Integration**: It combines grid-based social pooling—aggregating the hidden states of neighboring agents to capture human-human interactions—with hand-crafted map features over a 2-second history and forecasting horizon.
-- **Performance Metrics**: Evaluated against 19,603 pedestrian validation scenes, the model achieved highly accurate forecasts, logging an Average Displacement Error (ADE) of 0.2187 m and a Final Displacement Error (FDE) of 0.5107 m.
-- **Reliability**: The model successfully secured a 23.67% miss rate at a strict 0.8 m threshold.
+- **Architectural Design**: The model utilizes a dual-branch design that explicitly decomposes social and scene information into dedicated encoders, drawing conceptual inspiration from Social-Scene LSTM hierarchical architectures <a href="https://ieeexplore.ieee.org/document/8354239" target="_blank" rel="noopener noreferrer">SS-LSTM</a> and Social-LSTM pooling strategies <a href="https://ieeexplore.ieee.org/document/7780479" target="_blank" rel="noopener noreferrer">Social-LSTM</a>.
+- **Context Integration**: It combines grid-based social pooling; aggregating the hidden states of neighboring agents to capture human-human interactions, with hand-crafted map features over a 2-second history and forecasting horizon.
+- **Performance Metrics**: Evaluated against **19,603** pedestrian validation scenes, the model achieved highly accurate forecasts, logging an **Average Displacement Error (ADE)** of **0.2187 m** and a **Final Displacement Error (FDE)** of **0.5107 m**.
+- **Reliability**: The model successfully secured a **23.67%** miss rate at a strict **0.8 m** threshold.
 
 ## Technical Stack & Compute Environment
 
