@@ -47,7 +47,9 @@ Our team tackled this complex problem by building a suite of models, transitioni
 
 # My Contribution: Pedestrian Motion Forecasting
 
-![ACDC_Architecture.drawio.svg](:ACDC/ACDC_Architecture.drawio.svg)
+<p align="center">
+  <img src=":ACDC/ACDC_Architecture.drawio.svg" alt="Architecture Diagram">
+</p>
 
 Traffic participants operate under fundamentally different dynamics; unlike vehicles that follow structured lane geometry, pedestrians exhibit short-range, highly irregular movements and require a tighter, localized spatial context. To address this, I spearheaded the design and development of a pedestrian-specific Map-Aware Social-LSTM model.
 
@@ -70,11 +72,17 @@ While the architecture successfully fused social and map context, evaluating its
 
 In scenarios with clear spatial constraints and observable intent, the model accurately captured distinct pedestrian maneuvers:
 
-<figure><img src="/assets/img/posts/ACDC/goodprediction_1.png" alt="Plot 1"><figcaption>Accurate prediction of a pedestrian turn.</figcaption></figure>
+<p align="center">
+  <img src=":ACDC/goodprediction_1_background.jpg" alt="Good Prediction 1" width="70%">
+</p>
 
-<figure><img src="/assets/img/posts/ACDC/goodprediction_2.png" alt="Plot 2"><figcaption>Accurate extrapolation of a linear pedestrian path.</figcaption></figure>
+<p align="center">
+  <img src=":ACDC/goodprediction_2_background.jpg" alt="Good Prediction 2" width="70%">
+</p>
 
-<figure><img src="/assets/img/posts/ACDC/goodprediction_4.png" alt="Plot 3"><figcaption>Anticipation of a pedestrian navigating toward a crosswalk.</figcaption></figure>
+<p align="center">
+  <img src=":ACDC/goodprediction_4_background.jpg" alt="Good Prediction 4" width="70%">
+</p>
 
 ### Architectural and Data-Driven Limitations
 
@@ -82,30 +90,36 @@ Despite these successes, edge-case analysis exposed scenarios where the predicti
 
 1. Architectural Constraints: The Purple Pedestrian Failure
 
-In the complex interaction shown below, the model fails to predict the true path of the purple pedestrian.
+    In the complex interaction shown below, the model fails to predict the true path of the purple pedestrian.
 
-<figure><img src="/assets/img/posts/ACDC/failureprediction_1.png" alt="Plot 4"><figcaption>Failure in prediction of purple pedestrian</figcaption></figure>
+    <p align="center">
+    <img src=":ACDC/failureprediction_1_background.jpg" alt="Failure Prediction 1" width="70%">
+    </p>
 
-This failure highlights two specific architectural flaws: 
-- **Overly Rigid Social Repulsion**: The grid-based social pooling forces the purple pedestrian to maintain a parallel path, effectively preventing it from cutting across the adjacent blue pedestrian to avoid a perceived, mathematically heavily-penalized collision.
-- **Map Context Dilution**: Using mean pooling for the map context geographically blurs the distinct boundary of the crosswalk. Consequently, the attractive signal of the crosswalk becomes too weak to override the aggressive social repulsion. Implementing a weighted average or max pooling mechanism could have preserved this critical map feature better.
+    This failure highlights two specific architectural flaws: 
+    - **Overly Rigid Social Repulsion**: The grid-based social pooling forces the purple pedestrian to maintain a parallel path, effectively preventing it from cutting across the adjacent blue pedestrian to avoid a perceived, mathematically heavily-penalized collision.
+    - **Map Context Dilution**: Using mean pooling for the map context geographically blurs the distinct boundary of the crosswalk. Consequently, the attractive signal of the crosswalk becomes too weak to override the aggressive social repulsion. Implementing a weighted average or max pooling mechanism could have preserved this critical map feature better.
 
 2. Data Limitations: Missing History
 
-A significant portion of prediction errors stemmed directly from imperfect sensor recordings.
+    A significant portion of prediction errors stemmed directly from imperfect sensor recordings.
 
-<figure><img src="/assets/img/posts/ACDC/failureprediction_2.png" alt="Plot 5"><figcaption>Failure in prediction due to missing of data</figcaption></figure>
+    <p align="center">
+    <img src=":ACDC/failureprediction_2_background.jpg" alt="Failure Prediction 2" width="70%">
+    </p>
 
-During preprocessing, tracks with missing frames were padded with the latest available positional data to maintain tensor dimensions. If a pedestrian's history was entirely truncated before the prediction threshold, the padding forced the model to perceive the agent as stationary. Consequently, the model predicts a stationary future, completely failing to capture the sudden, unrecorded onset of movement.
+    During preprocessing, tracks with missing frames were padded with the latest available positional data to maintain tensor dimensions. If a pedestrian's history was entirely truncated before the prediction threshold, the padding forced the model to perceive the agent as stationary. Consequently, the model predicts a stationary future, completely failing to capture the sudden, unrecorded onset of movement.
 
 
 3. Sensor Noise and the ADE/FDE Metric Fallacy
 
-Finally, irregular trajectories, whether caused by erratic human movement or sensor tracking noise-frequently caused the prediction to collapse, as there were no discernible kinematic patterns for the LSTM to latch onto.
+    Finally, irregular trajectories, whether caused by erratic human movement or sensor tracking noise-frequently caused the prediction to collapse, as there were no discernible kinematic patterns for the LSTM to latch onto.
 
-<figure><img src="/assets/img/posts/ACDC/randomprediction_1.png" alt="Plot 6"><figcaption>Failure in prediction due to randomness of the trajectory</figcaption></figure>
+    <p align="center">
+    <img src=":ACDC/randomprediction_1_background.jpg" alt="Random Prediction 1" width="70%">
+    </p>
 
-Crucially, the example above exposes a fundamental flaw in how motion forecasting is evaluated. Despite the prediction collapsing visually and behaviorally, the Average Displacement Error (ADE) and Final Displacement Error (FDE) values for this plot remain misleadingly low. Because human motion operates within a much smaller spatial radius than vehicle motion, absolute error values in meters inherently stay small. This confirms that while ADE and FDE are standard benchmarks, they are heavily flawed metrics for evaluating the true behavioral accuracy and safety viability of pedestrian trajectory predictions.
+    Crucially, the example above exposes a fundamental flaw in how motion forecasting is evaluated. Despite the prediction collapsing visually and behaviorally, the Average Displacement Error (ADE) and Final Displacement Error (FDE) values for this plot remain misleadingly low. Because human motion operates within a much smaller spatial radius than vehicle motion, absolute error values in meters inherently stay small. This confirms that while ADE and FDE are standard benchmarks, they are heavily flawed metrics for evaluating the true behavioral accuracy and safety viability of pedestrian trajectory predictions.
 
 
 ## The Broader Team Effort
@@ -118,4 +132,8 @@ Their work progressed from Constant Velocity (CV) and Constant Acceleration (CA)
 
 Future iterations of this research will extend the analysis beyond LSTM backbones to explore state-of-the-art transformer-based vectorized models, such as HiVT and QCNet, which currently define the benchmark standards on the Argoverse dataset.
 
-## ![GitHub Link](https://github.com/tanayranjan/acdc-motion-forecasting-rwth-aachen)
+<p align="center">
+  <a href="https://github.com/tanayranjan/acdc-motion-forecasting-rwth-aachen" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/View%20on-GitHub-blue?style=for-the-badge&logo=github" alt="GitHub Repository" class="imgViewer" data-no-image-viewer>
+  </a>
+</p>
