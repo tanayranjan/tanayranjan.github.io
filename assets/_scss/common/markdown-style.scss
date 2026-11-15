@@ -50,6 +50,24 @@
   line-height: 2.7rem;
 }
 
+/* Keep media and captions together, with readable spacing in either colour scheme. */
+.markdown-style figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.markdown-style figcaption {
+  max-width: min(85%, 70ch);
+  margin-top: 0.8rem;
+  color: var(--body-text-color);
+  font-size: 1.35rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+}
+
 /* center items */
 .markdown-style [data-align="center"] {
   margin-left: auto;
