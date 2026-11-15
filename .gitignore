@@ -19,3 +19,9 @@ Thumbs.db
 
 # updating Gemfile automatically using github actions
 vendor
+
+# Original hackathon media; the post uses optimized copies.
+/assets/img/posts/RoboInnovate/
+
+# Blog videos are hosted externally, never committed.
+/assets/img/posts/robo-innovate-2026/*.mp4
